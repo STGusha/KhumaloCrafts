@@ -4,9 +4,10 @@ namespace KhumaloCrafts.Models
 {
     public class ProductTable
     {
-        public static string con_string = "Server=tcp:khumaloc.database.windows.net,1433;Initial Catalog=KhumaloDatabase;" +
-            "Persist Security Info=False;" + "User ID=samgusha;Password=Cara5002#;MultipleActiveResultSets=False;" +
-            "Encrypt=True;" + "TrustServerCertificate=False;Connection Timeout=30;";
+        public static string con_string = "Server=tcp:khumaloc.database.windows.net,1433;" +
+            "Initial Catalog=khumalo-database-cldv;Persist Security Info=False;User ID=samgusha;Password=Cara5002;" +
+            "MultipleActiveResultSets=False;Encrypt=True;" +
+            "TrustServerCertificate=False;Connection Timeout=30;";
 
         public static SqlConnection con = new SqlConnection(con_string);
 

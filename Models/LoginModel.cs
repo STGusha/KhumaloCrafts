@@ -31,6 +31,7 @@ namespace KhumaloCrafts.Models
                 catch (Exception ex)
                 {
                     // Log the exception or handle it appropriately
+                    //System.Diagnostics.Trace.WriteLine(ex.ToString());
                     // For now, rethrow the exception
                     throw ex;
                 }

@@ -15,7 +15,7 @@ namespace KhumaloCrafts.Controllers
                 using (SqlConnection con = new SqlConnection(ProductTable.con_string))
                 {
                     // Define the SQL query to insert a new record into the transactionTable
-                    string sql = "INSERT INTO transactionTable (userID, productID) VALUES (@UserID, @ProductID)";
+                    string sql = "INSERT INTO Orders (userID, productID) VALUES (@UserID, @ProductID)";
 
                     // Create a new instance of SqlCommand with the SQL query and SqlConnection
                     using (SqlCommand cmd = new SqlCommand(sql, con))

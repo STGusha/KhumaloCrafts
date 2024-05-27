@@ -21,11 +21,11 @@ namespace KhumaloCrafts.Controllers
             List<ProductTable> products = ProductTable.GetAllProducts();
 
             // Retrieve userID from session
-            int? userID = _httpContextAccessor.HttpContext.Session.GetInt32("UserID");
+            int? UserID = HttpContext.Session.GetInt32("UserID");
 
             // Pass products and userID to the view
             ViewData["Products"] = products;
-            ViewData["UserID"] = userID;
+            ViewData["UserID"] = UserID;
 
             return View();
         }
@@ -35,7 +35,7 @@ namespace KhumaloCrafts.Controllers
             return View();
         }
 
-        public IActionResult ContactUs() 
+        public IActionResult ContactUs()
         {
             return View();
         }
@@ -50,6 +50,10 @@ namespace KhumaloCrafts.Controllers
             return View();
         }
 
+        public IActionResult AddProduct()
+        {
+            return View("addproduct");
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
